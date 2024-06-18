@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base
+{
+  @font-face 
+  {
+    font-family: 'Edwardian';
+    src: url('../src/assets/fonts/Edwardian.ttf')
+  }
+
+  @font-face 
+  {
+    font-family: 'Kaushanscript';
+    src: url('../src/assets/fonts/KaushanScript-Regular.ttf')
+  }
+  @font-face 
+  {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    src: url('../src/assets/fonts/Montserrat-Regular.ttf')
+  }
+  @font-face 
+  {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    src: url('../src/assets/fonts/Montserrat-Bold.ttf')
+  }
+  @font-face 
+  {
+    font-family: 'Judson';
+    src: url('../src/assets/fonts/Judson-Regular.ttf')
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #242424;
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.loader.active
+{
+  opacity: 0;
+  transition: 1s;
+  display: none;
+}
